@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    width: 550px;
+    margin-left: 40px;
+}
+
+.aboutHead {
+    font-size: 50px;
+    font-weight: 600;
+    color: #002A48;
+}
+
+.pAbout {
+    color: #002A48;
+    font-weight: 600;
+}
+
+.bgAboutBanner {
+    width: 523px;
+    height: 400px;
+    
+}
+
+#aboutButton {
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 55px;
+    text-decoration: none;
+    background-color: #002A48;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#petButton {
+    width: 190px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 55px;
+    text-decoration: none;
+    background-color: #002A48;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 35px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        text-align: center; /* Center the text and image */
+    }
+
+    .about {
+        margin: 20px 0 0 0; /* Adjust margin to center the content below the image */
+        width: 100%; /* Ensure the content takes full width */
+    }
+
+    .bgAboutBanner {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Adjust the height to maintain aspect ratio */
+    }
+
+    .aboutHead {
+        font-size: 40px; /* Slightly reduce font size for smaller screens */
+    }
+
+    #aboutButton {
+        margin: 10px 5px; /* Reduce margin for buttons */
+    }
+}
+
+/* Media query for small screens (phones) */
+@media (max-width: 768px) {
+    .aboutHead {
+        font-size: 35px; /* Reduce font size further for smaller screens */
+    }
+
+    .bgAboutBanner {
+        width: 100%; /* Full width for small screens */
+        height: auto;
+    }
+
+    .about {
+        margin-left: 0; /* Remove side margin for small screens */
+    }
+
+    #aboutButton {
+        width: 120px; /* Adjust button size */
+        height: 45px;
+    }
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 535px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about, .bgAboutBanner {
+        width: 100%; /* Both the content and image sections will take full width */
+        margin: 10px 0;
+    }
+
+    .bgAboutBanner img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+
+    .aboutHead {
+        font-size: 30px; /* Reduce heading size */
+    }
+
+    .pAbout {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    #aboutButton {
+        width: 100px; /* Adjust button size */
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .buttonGroup {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 0px; /* Add space between the buttons */
+    }
+}
+
+@media (max-width: 356px) {
+    .aboutHead {
+        font-size: 24px; /* Further reduce heading size */
+    }
+
+    .pAbout {
+        font-size: 12px; /* Further reduce paragraph font size */
+    }
+
+    #aboutButton {
+        width: 80px; /* Further reduce button size */
+        height: 35px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,42 @@
+#footerContainer {
+    background-color: #f9edd5; /* Set the desired background color */
+    width: 100%;
+    padding: 20px 0; /* Optional: Add some padding */
+}
+
+.intro {
+    width: 400px; /* Set a fixed width for the intro section */
+}
+
+#links,
+#guides,
+#contact {
+    margin: 20px 0; /* Space between the sections */
+}
+
+#icons a {
+    margin: 0 10px; /* Space between icons */
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .intro {
+        width: 100%; /* Full width on small screens */
+        text-align: center; /* Center text */
+    }
+
+    #links,
+    #guides,
+    #contact {
+        width: 100%; /* Full width on small screens */
+        text-align: center; /* Center text */
+    }
+
+    #icons {
+        justify-content: center; /* Center icons */
+    }
+}

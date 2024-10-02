@@ -1,0 +1,151 @@
+.navHeight{
+    height: 80px;
+}
+.logo{
+    width: 112px;
+    height: 39px;
+    margin-left: 60px;
+}
+
+.Home{
+    width: 550px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 80px;
+    background-color: #f9edd5;
+}
+.mainhead{
+    font-size: 50px;
+    font-weight: 600;
+    color: #002A48;
+}
+.linkColor{
+    color: #002A48;
+}
+.phome{
+    color: #002A48;
+    font-weight: 600;
+}
+.bgBanner{
+    width: 523px;
+    height: 400px;
+    margin-left: 600px;
+    margin-top: -250px;
+}
+#HomeButton{
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 55px;
+    text-decoration: none;
+    background-color: #002A48;
+    color: white;
+
+    cursor: pointer;
+}
+
+#cards:hover {
+    transform: scale(1.05); /* Slightly increases the size of the card */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out 0.1s, box-shadow 0.3s ease-in-out;
+  }
+
+@media (max-width: 1024px) {
+    .Home {
+        width: 450px;
+        height: 300px;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .mainhead {
+        font-size: 40px;
+    }
+
+    .bgBanner {
+        width: 450px;
+        height: 300px;
+        margin-left: 400px;
+        margin-top: -200px;
+    }
+
+    #HomeButton {
+        width: 120px;
+        height: 45px;
+    }
+    .phome {
+        font-size: 16px;
+    }
+}
+@media (max-width: 900px) and (min-width: 765px) {
+    .bgBanner {
+        width: 400px; /* Adjust the width */
+        height: 300px; /* Adjust the height */
+        margin-left: 300px; /* Adjust the left margin */
+        margin-top: -200px; /* Adjust the top margin */
+    }
+}
+
+
+/* Media Query for small screens (mobile devices, 576px - 767px) */
+@media (max-width: 767px) {
+    .Home {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .mainhead {
+        font-size: 30px;
+    }
+
+    .bgBanner {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    #HomeButton {
+        width: 100px;
+        height: 40px;
+    }
+    .phome {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+/* Media Query for extra small screens (very small devices, less than 576px) */
+@media (max-width: 575px) {
+    .Home {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .mainhead {
+        font-size: 25px;
+    }
+
+    .bgBanner {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    #HomeButton {
+        width: 90px;
+        height: 35px;
+    }
+    .phome {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+}
